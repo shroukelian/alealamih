@@ -263,11 +263,9 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     gap: 20px;
 }
 
-/* تعديل أحجام الكروت الخاصة */
-.grid-item.large { grid-column: span 2; grid-row: span 2; } /* كارت التسريحة */
-.grid-item.wide { grid-column: span 2; } /* كارت السكراب */
+.grid-item.large { grid-column: span 2; grid-row: span 2; } 
+.grid-item.wide { grid-column: span 2; }
 
-/* تنسيق الفيديو داخل الكارت */
 .card-video {
     position: absolute;
     top: 0;
@@ -276,10 +274,9 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    opacity: 0.6; /* شفافية بسيطة عشان النص يبان */
+    opacity: 0.6; 
 }
 
-/* بادج صغير فوق الكارت */
 .tag {
     background: var(--accent);
     color: #000;
@@ -292,7 +289,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     text-transform: uppercase;
 }
 
-/* ضبط الموبايل لـ 6 كروت */
 @media (max-width: 992px) {
     .modern-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -309,7 +305,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 }
 
 
-/* --- سكشن آلية العمل --- */
 .process-section { padding: 100px 0; background: #fff; }
 .process-grid { 
     display: grid; 
@@ -328,7 +323,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 .step-card i { font-size: 3rem; color: var(--accent); margin-bottom: 20px; }
 .step-card h4 { font-weight: 800; margin-bottom: 15px; }
 
-/* --- سكشن أحياء جدة --- */
 .coverage-area { padding: 50px 0; }
 .coverage-box {
     background: var(--primary); color: white; padding: 60px 40px;
@@ -344,7 +338,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
-/* --- سكشن الأسئلة الشائعة --- */
 .faq-section { padding: 80px 0; background: #fafafa; }
 .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
 .faq-item { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
@@ -360,13 +353,11 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 }
 .cta-card h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 20px; }
 
-/* ضبط الجوال */
 @media (max-width: 768px) {
     .faq-grid { grid-template-columns: 1fr; }
     .cta-card h2 { font-size: 1.8rem; }
 }
 
-/* --- أنيميشن الهوفر على أسماء الأحياء --- */
 .neighborhoods-tags span {
     background: rgba(255, 255, 255, 0.05);
     padding: 10px 22px;
@@ -375,7 +366,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     font-weight: 700;
     border: 1px solid rgba(212, 175, 55, 0.2);
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* حركة مطاطية احترافية */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: inline-block;
     color: #ddd;
 }
@@ -383,7 +374,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 .neighborhoods-tags span:hover {
     background: var(--accent);
     color: #000;
-    transform: translateY(-8px) scale(1.1); /* يرتفع للأعلى ويكبر قليلاً */
+    transform: translateY(-8px) scale(1.1);
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
     border-color: var(--accent);
 }
