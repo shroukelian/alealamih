@@ -1,7 +1,7 @@
 :root {
     --primary: #1a1a1a;
-    --accent: #d4af37; /* ذهبي ملكي */
-    --accent-light: #f39c12; /* برتقالي حيوي */
+    --accent: #d4af37; 
+    --accent-light: #f39c12; 
     --text-light: #f4f4f4;
     --white: #ffffff;
     --grey: #888;
@@ -46,7 +46,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 /* Hero Section */
 .hero-section {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000') center/cover no-repeat;
+    background: url('imgs/img5.jpeg') center/cover no-repeat;
     display: flex; align-items: center; position: relative; color: white;
 }
 
@@ -57,7 +57,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 
 .hero-content { position: relative; z-index: 1; max-width: 800px; }
 .city-tag { background: var(--accent); padding: 5px 15px; border-radius: 50px; font-size: 0.9rem; font-weight: 700; margin-bottom: 20px; display: inline-block; }
-.hero-section h1 { font-size: 4rem; font-weight: 900; line-height: 1.2; margin-bottom: 25px; }
+.hero-section h1 { font-size: 3.4rem; font-weight: 900; line-height: 1.2; margin-bottom: 25px; }
 .text-gradient { color: var(--accent); text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
 .hero-section p { font-size: 1.3rem; margin-bottom: 40px; opacity: 0.9; }
 
@@ -66,7 +66,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 .btn-outline { border: 2px solid white; color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 900; transition: var(--transition); }
 .btn-main:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
 
-/* Modern Grid (The Special Part) */
 .services { padding: 100px 0; background: #fafafa; }
 .section-title h2 { font-size: 2.5rem; font-weight: 900; margin-bottom: 10px; }
 .title-line { width: 80px; height: 5px; background: var(--accent); margin-bottom: 50px; }
@@ -128,7 +127,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     .hero-section h1 { font-size: 2.5rem; }
 }
 
-/* إخفاء زر المنيو في الشاشات الكبيرة */
 .menu-btn {
     display: none; 
     cursor: pointer;
@@ -136,18 +134,16 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     color: var(--primary);
 }
 
-/* إظهاره فقط في الموبايل */
 @media (max-width: 992px) {
     .menu-btn {
         display: block;
     }
     .nav-links {
-        display: none; /* سيتم إظهارها بالـ JS عند الضغط */
+        display: none; 
     }
 }
 
 
-/* --- تنسيق اللوجو والأيقونة --- */
 .logo-container {
     display: flex;
     align-items: center;
@@ -170,11 +166,10 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 
 
 
-/* --- أنيميشن الزووم للهيرو (Ken Burns Effect) --- */
 .hero-section {
     height: 100vh;
     position: relative;
-    overflow: hidden; /* ضروري عشان الصورة لما تكبر متخرجش بره */
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
@@ -185,22 +180,20 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     left: 0;
     width: 100%;
     height: 100%;
-    /* استبدل هذا الرابط بصورة الأثاث الفخمة لديك */
     background: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000') center/cover no-repeat;
     z-index: -1;
-    /* تشغيل أنيميشن الزووم */
     animation: zoomAction 20s infinite alternate ease-in-out;
 }
 
 @keyframes zoomAction {
     0% { transform: scale(1); }
-    100% { transform: scale(1.15); } /* تكبير الصورة بنسبة 15% */
+    100% { transform: scale(1.15); } 
 }
 
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: linear-gradient(70deg, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.4) 100%);
+    /* background: linear-gradient(70deg, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.4) 100%); */
     z-index: 1;
 }
 
@@ -220,7 +213,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     border: 1px solid var(--accent);
 }
 
-/* --- تعديلات الأزرار --- */
 .btn-main {
     background: var(--accent);
     color: #000 !important;
@@ -247,7 +239,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     color: black;
 }
 
-/* --- أنيميشن النبض للزر العلوي --- */
 .pulse-gold {
     animation: pulse-gold-animation 2s infinite;
 }
@@ -258,7 +249,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
 }
 
-/* ضبط الموبايل */
 @media (max-width: 768px) {
     .hero-container { text-align: center; }
     .cta-group { justify-content: center; }
@@ -266,11 +256,10 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 }
 
 
-/* --- تعديلات الشبكة لتناسب 6 كروت --- */
 .modern-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 280px; /* ارتفاع الصفوف */
+    grid-auto-rows: 280px; 
     gap: 20px;
 }
 
@@ -392,14 +381,13 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 }
 
 .neighborhoods-tags span:hover {
-    background: var(--accent); /* اللون الذهبي */
+    background: var(--accent);
     color: #000;
     transform: translateY(-8px) scale(1.1); /* يرتفع للأعلى ويكبر قليلاً */
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
     border-color: var(--accent);
 }
 
-/* --- سكشن الاتصال الأخير بخلفية صورة --- */
 .final-cta {
     padding: 100px 0;
 }
@@ -411,16 +399,14 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     overflow: hidden;
     color: white;
     border: 2px solid var(--accent);
-    /* إضافة صورة خلفية */
     background: url('imgs/img5.jpeg') center/cover no-repeat;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* طبقة التظليل فوق الصورة */
 .cta-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* تظليل داكن عشان الكلام يبرز */
+    background: rgba(0, 0, 0, 0.75); 
     z-index: 1;
 }
 
@@ -439,7 +425,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 
 .cta-card p {
     font-size: 1.2rem;
-    margin-bottom: 40px; /* مسافة كافية عشان الزرار ميركبش ع الكلام */
+    margin-bottom: 40px; 
     opacity: 0.9;
 }
 
@@ -447,7 +433,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     margin-top: 20px;
 }
 
-/* تعديل ستايل نبض الزرار الذهبي */
 .pulse-gold {
     animation: pulse-gold 2s infinite;
 }
@@ -458,7 +443,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     100% { transform: scale(1); }
 }
 
-/* للموبايل */
 @media (max-width: 768px) {
     .cta-card {
         padding: 60px 20px;
@@ -472,13 +456,11 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     }
 }
 
-/* --- ضبط الموبايل (Mobile UX) --- */
 @media (max-width: 992px) {
-    /* ضبط القائمة الجانبية لتنزلق بشكل احترافي */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية تماماً */
+        right: -100%; 
         width: 80%;
         max-width: 300px;
         height: 100vh;
@@ -492,7 +474,7 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     }
 
     .nav-links.active {
-        right: 0; /* تظهر عند الضغط */
+        right: 0;
     }
 
     .nav-links a {
@@ -503,16 +485,14 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     }
 .nav-links a:hover { color: var(--accent); }
 
-    /* تكبير علامة المنيو لسهولة اللمس */
     .menu-btn {
         display: block !important;
         font-size: 2rem;
         z-index: 2001;
     }
 
-    /* حل مشكلة صورة الهيرو على الموبايل */
     .hero-section {
-        min-height: 100dvh; /* dvh تحل مشكلة الفراغ في الموبايل */
+        min-height: 100dvh; 
         text-align: center;
         padding-top: 100px;
     }
@@ -533,9 +513,8 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     }
 }
 
-/* --- تنسيق الفوتر الاحترافي (الديسكتوب والموبايل) --- */
 .main-footer {
-    background: #0d0d0d; /* أسود أغمق للفخامة */
+    background: #0d0d0d; 
     color: #fff;
     padding: 80px 0 0;
     border-top: 1px solid rgba(212, 175, 55, 0.2);
@@ -611,7 +590,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     font-size: 0.85rem;
 }
 
-/* ضبط الفوتر للموبايل */
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
@@ -630,29 +608,26 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 }
 
 @media (max-width: 992px) {
-    /* 1. إعداد القائمة لتكون فوق كل شيء */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%; /* مخفية خارج الشاشة */
-        width: 100%; /* تأخذ عرض الشاشة بالكامل لضمان الوضوح */
+        right: -100%;
+        width: 100%; 
         height: 100vh;
-        background: #ffffff !important; /* خلفية بيضاء صريحة */
-        display: flex !important; /* نستخدم flex لترتيب اللينكات */
+        background: #ffffff !important; 
+        display: flex !important; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
         transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 3000 !important; /* رقم عالي جداً لتكون فوق الهيرو والواتساب */
+        z-index: 3000 !important; 
     }
 
-    /* 2. الحالة عند الضغط (إضافة كلاس active) */
     .nav-links.active {
-        right: 0 !important; /* تظهر في الشاشة */
+        right: 0 !important;
     }
 
-    /* 3. تنسيق اللينكات جوه المنيو */
     .nav-links li {
         list-style: none;
         width: 100%;
@@ -666,34 +641,21 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
         text-decoration: none;
     }
 
-    /* 4. زر المنيو (التلات شرطات) */
     .menu-btn {
         display: block !important;
         position: relative;
-        z-index: 3001 !important; /* أعلى من القائمة نفسها عشان تقدر تقفلها */
+        z-index: 3001 !important; 
         font-size: 2rem;
         color: var(--primary);
     }
     
-    /* تغيير لون الزر لأسود لما المنيو تفتح عشان يبان */
     .nav-links.active ~ .menu-btn {
         color: #000;
     }
 }
-
-
-
-
-
-
-
-
-
-
 .hero-section {
     position: relative;
     width: 100%;
-    /* الحل السحري: استخدام min-height مع dvh وتصفير الـ height */
     height: auto; 
     min-height: 100dvh; 
     
@@ -702,12 +664,10 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     justify-content: center;
     overflow: hidden;
     
-    /* مهم جداً: الـ padding ميزودش عرض أو طول السكشن */
     box-sizing: border-box; 
-    padding-top: 80px; /* مساحة للهيدر */
+    padding-top: 80px; 
 }
 
-/* طبقة الخلفية (الزووم) لازم تكون مالية السكشن بالظبط */
 .hero-zoom-bg {
     position: absolute;
     top: 0;
@@ -721,7 +681,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     animation: zoomAction 20s infinite alternate ease-in-out;
 }
 
-/* طبقة التظليل (Overlay) */
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -729,7 +688,6 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
     z-index: 1;
 }
 
-/* محتوى الهيرو */
 .hero-container {
     position: relative;
     z-index: 10;
@@ -738,27 +696,25 @@ body { background-color: var(--white); color: var(--primary); overflow-x: hidden
 
 @media (max-width: 992px) {
     .hero-section {
-        min-height: 100dvh; /* تأكيد ملء الشاشة في الموبايل */
+        min-height: 100dvh; 
         padding-top: 100px;
         padding-bottom: 50px;
     }
 }
 
 
-/* --- 1. تصفير الهوامش ومنع السكرول العرضي نهائياً --- */
 html, body {
     max-width: 100%;
-    overflow-x: hidden; /* أهم سطر لمنع المساحة البيضاء على الجنب */
+    overflow-x: hidden; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit; /* بيضمن إن الـ Padding ميزودش عرض العنصر لبره */
+    box-sizing: inherit; 
 }
 
-/* --- 2. تظبيط الهيدر في الموبايل عشان ميهربش --- */
 @media (max-width: 768px) {
     .nav-container {
         width: 100% !important;
@@ -767,10 +723,9 @@ html, body {
     }
     
     .logo {
-        max-width: 70%; /* عشان اللوجو ميزقش الصفحة لبره */
+        max-width: 70%; 
     }
 
-    /* --- 3. تظبيط الهيرو (الواجهة) --- */
     .hero-section {
         width: 100% !important;
         overflow: hidden;
@@ -782,15 +737,26 @@ html, body {
     }
 
     .hero-title {
-        font-size: 1.8rem !important; /* تصغير الخط عشان ميكسرش السطر ويخرج لبره */
+        font-size: 1.8rem !important;
         word-wrap: break-word;
     }
 
-    /* --- 4. منع حركات AOS من تخريب العرض --- */
     [data-aos] {
         pointer-events: none;
     }
     .aos-animate {
         pointer-events: auto;
     }
+}
+
+.developer-credit a {
+    color: var(--accent); 
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.developer-credit a:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--accent);
 }
